@@ -4,26 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rounded+M+1c&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>なーさんは王様</title>
+    <title>あこのへや</title>
   </head>
-  <body>
-    <header id="header" class="container">
-      <div>
-        <h1>なーさんは王様</h1>
-        <nav>
-          <ul>
-            <li>問い合わせ</li>
-            <li>オンラインストア</li>
-          </ul>
-        </nav>
-      </div>
 
-      <img src="img/cherryBlossom.jpg" alt="" width="480" height="600" />
+  <body>
+    <header class="header">
+      <h1 class="logo kaisei-fonts-large">あこのへや</h1>
+      <span class="logo-small kaisei-fonts-small">
+        ～なーさんといっしょに
+      </span>
     </header>
+
+    <main>
+      <section class="introduction">
+        <div class="introduction-img">
+          <img
+            src="img/cherryBlossom.jpg"
+            alt="なーさんと桜"
+            width="572"
+            height="715"
+          />
+        </div>
+        <div class="introduction-text kaisei-fonts-large">
+          <h2>ごあいさつ</h2>
+          <p class="noto-fonts">
+            あこのへやへようこそ！<br />このお部屋ではかわいい猫ちゃんのイラストや、あこの愛猫「なーさん」との日常あれこれを描いた作品を紹介しています。
+          </p>
+        </div>
+      </section>
+
+      <section class="online-shop">
+        <h2 class="online-shop-title kaisei-fonts-large">おんらいんしょっぷ</h2>
+        <div class="goods">
+          <img src="img/shirt-white.png" alt="白シャツ" />
+          <img src="img/shirt-black.png" alt="黒シャツ" />
+        </div>
+        <p class="noto-fonts">
+          <a href="https://up-t.jp/creator/682b5a9d535c8">オンラインショップ</a
+          >にて好評発売中！
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <small>&copy;2025 あこのへや</small>
+    </footer>
   </body>
 </html>
