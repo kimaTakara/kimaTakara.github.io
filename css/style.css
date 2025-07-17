@@ -23,9 +23,34 @@
   font-variation-settings: "wdth" 100;
 }
 
-:root {
-  --bg-color: #f3e5d0;
-  --text-color: #556b2f;
+/* クリーム & ブラウン */
+body.theme-1 {
+  --theme-bg: #fef8e8;
+  --theme-text: #5b4636;
+}
+
+/* ミントグリーン & ダークブラウン */
+body.theme-2 {
+  --theme-bg: #d5ebe1;
+  --theme-text: #3c2f2f;
+}
+
+/* ラベンダーグレー & ダークチャコール */
+body.theme-3 {
+  --theme-bg: #e2dfea;
+  --theme-text: #333333;
+}
+
+/* ペールピンク & セピア */
+body.theme-4 {
+  --theme-bg: #fce8e6;
+  --theme-text: #5a3e36;
+}
+
+/* ウォームベージュ & オリーブグリーン ← 現在はこれ！  */
+body.theme-5 {
+  --theme-bg: #f3e5d0;
+  --theme-text: #556b2f;
 }
 
 /* ------------------------
@@ -47,6 +72,9 @@ body {
   margin: 0 auto;
   padding: 1rem;
   max-width: 400px;
+
+  --bg-color: var(--theme-bg);
+  --text-color: var(--theme-text);
 }
 
 /* ------------------------ 
@@ -67,69 +95,68 @@ body {
 /* ------------------------ 
   introduction
   ------------------------ */
-  .introduction {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;    
-    gap: .5rem
-  }
+.introduction {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
-  .introduction-text h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
+.introduction-text h2 {
+  font-size: 2rem;
+  text-align: center;
+}
 
-  .introduction-text p {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    text-align: left;
-    line-height: 1.6;
-  }
+.introduction-text p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.6;
+}
 
 /* -----------------------
   online-shop
   ------------------------ */
-  .online-shop {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;  
-  }
+.online-shop {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 
-  .online-shop-title {
-    font-size: 2rem;
-  }
+.online-shop-title {
+  font-size: 2rem;
+}
 
-  .goods {
-    display: flex;
-    gap: 1rem;
-  }
+.goods {
+  display: flex;
+  gap: 1rem;
+}
 
-  .goods img {
-    width: calc((100% - 1rem) / 2);
-  }
-  .goods-title {
-    font-size: 1.5rem;
-  }
+.goods img {
+  width: calc((100% - 1rem) / 2);
+}
+.goods-title {
+  font-size: 1.5rem;
+}
 
 /* -----------------------
   footer
   ------------------------ */
-  footer {
-    margin-top: 2rem;
-    text-align: center;
-  }
-
+footer {
+  margin-top: 2rem;
+  text-align: center;
+}
 
 /* ------------------------
    media
   ------------------------ */
-@media  (min-width: 768px) {
+@media (min-width: 768px) {
   body {
     max-width: 1000px;
   }
-  
+
   /* ------------------------
     header
     ------------------------ */
@@ -161,6 +188,4 @@ body {
   .introduction-text {
     flex: 1;
   }
-
 }
-  
