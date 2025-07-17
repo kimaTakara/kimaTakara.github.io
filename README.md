@@ -1,0 +1,1 @@
+# kimaTakara.github.io
